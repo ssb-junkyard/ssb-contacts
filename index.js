@@ -9,7 +9,7 @@ exports.manifest = {
 }
 
 exports.init = function (ssb, config) {
-  return ssb._flumeUse('contacts', FlumeReduce(0, reduce, map))
+  return ssb._flumeUse('contacts', FlumeReduce(1, reduce, map))
 }
 
 function reduce (result, item) {
