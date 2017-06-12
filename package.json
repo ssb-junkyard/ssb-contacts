@@ -1,7 +1,7 @@
 {
   "name": "ssb-contacts",
   "description": "scuttlebot plugin for getting reduced 'contacts' state",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/ssbc/ssb-contacts",
   "repository": {
     "type": "git",
