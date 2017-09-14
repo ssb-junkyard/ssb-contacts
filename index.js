@@ -50,6 +50,19 @@ function map (msg) {
       }
     }
 
+    if ('blocking' in msg.value.content) {
+      values[source] = {
+        blocking: {
+          [dest]: [msg.value.content.blocking, msg.value.timestamp]
+        }
+      }
+      values[dest] = {
+        blockers: {
+          [source]: [msg.value.content.blocking, msg.value.timestamp]
+        }
+      }
+    }
+
     return values
   }
 }
